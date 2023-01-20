@@ -359,6 +359,7 @@ p {
     position: fixed;
     right: 30px;
     top: 5px;
+    color: black;
 }
 
 i.close-icon {
