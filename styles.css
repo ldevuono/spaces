@@ -263,6 +263,10 @@ li {
     padding: 0;
 }
 
+body {
+    overflow-x: hidden
+}
+
 /* BASE STYLES */
 html {
     font-size: 62.5%;
@@ -305,7 +309,7 @@ p {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
-    overflow-x: clip;
+    /* overflow-x: clip; */
 }
 
 /* NAV */
@@ -650,7 +654,7 @@ footer {
 }
 
 .footer-navs a {
-    border-bottom: 1px solid;
+    text-decoration: underline;
 }
 
 .footer-navs a:hover,
@@ -688,13 +692,13 @@ footer nav li {
     padding-bottom: 30px;
 }
 
-
 /* MEDIA QUERIES */
 @media(max-width:1000px) {
     .gallery-image-even {
         max-height: 339px;
     }
 }
+
 
 @media (max-width: 900px) {
 
@@ -914,7 +918,7 @@ footer nav li {
     }
 
     .round {
-        width: 80px;
+        min-width: 80px;
     }
 
     .testimonials-border {
@@ -941,8 +945,6 @@ footer nav li {
         width: 120px;
     }
 
-
-
     /* ABOUT */
 
     .about a {
@@ -963,13 +965,20 @@ footer nav li {
 
     /* TESTIMONIALS */
     .testimonials-source {
-        width: 600px;
+        width: 100%;
     }
 
     /* FOOTER */
+
+
+    .footer-navs {
+        width: 100%;
+    }
+
     .footer-navs li {
-        padding: 0 10px;
-        font-size: 1.3rem;
+        padding-right: 6px;
+        font-size: 1.2rem;
+        width: 100%;
     }
 
     .footer-hero img {
