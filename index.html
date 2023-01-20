@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/c6e0ae9053.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,23 +20,24 @@
     <div class="wrapper">
         <nav class="top-nav">
             <a class="logo" href="">Spaces</a>
-            <ul>
+            <ul class="nav-menu">
                 <li>
-                    <a href="">About</a>
+                    <a class="menu-item" href="">About</a>
                 </li>
                 <li>
-                    <a href="">Services</a>
+                    <a class="menu-item" href="">Services</a>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <a class="menu-item" href="">Projects</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a class="menu-item" href="">Contact</a>
                 </li>
             </ul>
-            <div class="menu">
-                <a href="">Menu</a>
-            </div>
+            <button class="hamburger" aria-label="Open navigation menu">
+                <i class="menu-icon fa-solid fa-bars fa-4x" aria-hidden="true"></i>
+                <i class="close-icon fa-solid fa-x fa-4x" aria-hidden="true"></i>
+            </button>
         </nav>
     </div>
     <!-- NAV ENDS -->
@@ -240,7 +242,7 @@
     </footer>
     <!-- FOOTER ENDS -->
 
-
+    <script src="./app.js"></script>
 </body>
 
 </html>
