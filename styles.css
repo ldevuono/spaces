@@ -305,6 +305,7 @@ p {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
+    overflow-x: clip;
 }
 
 /* NAV */
@@ -379,7 +380,6 @@ header {
 }
 
 /* ABOUT */
-
 
 .about p {
     padding-bottom: 25px;
@@ -680,12 +680,6 @@ footer nav li {
     font-size: 1.3rem;
 }
 
-/* footer nav li:focus,
-footer nav li:hover {
-    text-decoration: underline #b18f39;
-} */
-
-
 .copyright {
     font-size: 1rem;
     color: #9c9b98;
@@ -696,6 +690,11 @@ footer nav li:hover {
 
 
 /* MEDIA QUERIES */
+@media(max-width:1000px) {
+    .gallery-image-even {
+        max-height: 339px;
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -734,6 +733,7 @@ footer nav li:hover {
     .about-text {
         width: 100%;
         display: block;
+        /* text-align: center; */
     }
 
     .about {
@@ -742,15 +742,14 @@ footer nav li:hover {
         padding: 20px 0;
     }
 
-    .about-img-one {
-        position: relative;
-        width: 50%;
-        left: 200px;
+    .about-img-two {
+        display: none;
     }
 
-    .about-img-two {
-        position: relative;
-        width: 50%;
+    .about-img-one {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
     }
 
     /* PROJECTS */
@@ -759,13 +758,12 @@ footer nav li:hover {
         padding-top: 30px;
     }
 
-    .gallery-image-odd {
-        width: 100%;
-    }
-
+    .gallery-image-odd,
     .gallery-image-even {
         width: 100%;
+        max-height: fit-content;
     }
+
 
     .gallery-caption-odd,
     .gallery-caption-even {
@@ -892,24 +890,13 @@ footer nav li:hover {
 
 @media (max-width:490px) {
 
+    h2 {
+        font-size: 2.3rem;
+    }
+
     /* ABOUT */
     .about-text {
         font-size: 2rem;
-    }
-
-    .about a {
-        padding: 10px 90px;
-    }
-
-    .about-img-one {
-        position: relative;
-        width: 60%;
-        left: 100px;
-    }
-
-    .about-img-two {
-        position: relative;
-        width: 60%;
     }
 
     /* FORM */
@@ -933,6 +920,7 @@ footer nav li:hover {
     .testimonials-border {
         padding-right: 0;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -943,6 +931,7 @@ footer nav li:hover {
     }
 
     /* HEADER */
+
     h1 {
         font-size: 3rem;
         letter-spacing: 1px;
@@ -952,17 +941,22 @@ footer nav li:hover {
         width: 120px;
     }
 
-    h2 {
-        font-size: 2.3rem;
-    }
+
 
     /* ABOUT */
+
     .about a {
         font-size: 1.5rem;
         padding: 10px 50px;
     }
 
     /* FORM */
+
+    .form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     button {
         padding: 10px 50px;
     }
@@ -980,5 +974,17 @@ footer nav li:hover {
 
     .footer-hero img {
         height: 150px;
+    }
+}
+
+@media(max-width:345px) {
+    .tellUsIdeas span {
+        padding-bottom: 35px;
+    }
+}
+
+@media(max-width:314px) {
+    .wordsFromClients span {
+        padding-bottom: 35px;
     }
 }
