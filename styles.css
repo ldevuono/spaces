@@ -338,6 +338,11 @@ p {
     font-size: 1.8rem;
 }
 
+.top-nav ul a:hover,
+.top-nav ul a:focus {
+    border-bottom: 2px solid #b18f39;
+}
+
 
 .menu {
     border-top: solid black 3px;
@@ -534,6 +539,7 @@ textarea {
 input,
 textarea {
     border: #b18f39 1px solid;
+    padding: 5px;
 }
 
 label {
@@ -643,6 +649,15 @@ footer {
     padding: 25px;
 }
 
+.footer-navs a {
+    border-bottom: 1px solid;
+}
+
+.footer-navs a:hover,
+.footer-navs a:focus {
+    color: #b18f39;
+}
+
 .footer-info p {
     font-weight: 400;
     font-size: 1.5rem;
@@ -663,8 +678,12 @@ footer h4 {
 footer nav li {
     padding: 5px 10px 5px 0;
     font-size: 1.3rem;
-    text-decoration: underline;
 }
+
+/* footer nav li:focus,
+footer nav li:hover {
+    text-decoration: underline #b18f39;
+} */
 
 
 .copyright {
